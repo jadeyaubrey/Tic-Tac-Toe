@@ -119,6 +119,7 @@ namespace Tic_Tac_Toe_Final_
                 btnGrid.Text = "X";
                 lblTurnDisplay.Text = "O";
             }
+
             else
             {
                 btnGrid.Text = "O";
@@ -128,6 +129,64 @@ namespace Tic_Tac_Toe_Final_
             player_turn = !player_turn;
             btnGrid.Enabled = false;
             turn_count++;
+
+            checker();
         }
+
+        private void checker()
+        {
+            bool player_winner = false;
+
+            //vertical patterns 
+            if ((btn1.Text == btn4.Text) && (btn4.Text == btn7.Text) && (!btn1.Enabled))
+                player_winner = true;
+            else if ((btn2.Text == btn5.Text) && (btn5.Text == btn8.Text) && (!btn2.Enabled))
+                player_winner = true;
+            else if ((btn3.Text == btn6.Text) && (btn3.Text == btn9.Text) && (!btn3.Enabled))
+                player_winner = true;
+
+            //horizontal patterns 
+            else if ((btn1.Text == btn2.Text) && (btn1.Text == btn3.Text) && (!btn1.Enabled))
+                player_winner = true;
+            else if ((btn4.Text == btn5.Text) && (btn4.Text == btn6.Text) && (!btn4.Enabled))
+                player_winner = true;
+            else if ((btn7.Text == btn8.Text) && (btn7.Text == btn9.Text) && (!btn7.Enabled))
+                player_winner = true;
+
+            //diagonal patterns
+           else if ((btn1.Text == btn5.Text) && (btn1.Text == btn9.Text) && (!btn1.Enabled))
+                player_winner = true;
+           else if ((btn3.Text == btn5.Text) && (btn3.Text == btn7.Text) && (!btn3.Enabled))
+                player_winner = true;
+
+            if (player_winner == true)
+            {
+                string player = "";
+                if (player_turn)
+                    player = "O";
+                else
+                    player = "X";
+
+                MessageBox.Show("Player " + player + " wins!");
+
+                btn1.Enabled = false;
+                btn2.Enabled = false;
+                btn3.Enabled = false;
+                btn4.Enabled = false;
+                btn5.Enabled = false;
+                btn6.Enabled = false;
+                btn7.Enabled = false;
+                btn8.Enabled = false;
+                btn9.Enabled = false;
+
+                turn_count = 0;
+            }
+            else if (turn_count == 9)
+            {
+                MessageBox.Show("It's a Draw!");
+                turn_count = 0;
+            }
+        }
+
     }
 }

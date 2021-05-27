@@ -207,6 +207,7 @@ namespace Tic_Tac_Toe_Final_
             this.Controls.Add(this.btn2);
             this.Controls.Add(this.btn1);
             this.Name = "frmGame";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tic-Tac-Toe";
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
