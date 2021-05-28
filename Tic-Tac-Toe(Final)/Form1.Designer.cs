@@ -45,7 +45,14 @@ namespace Tic_Tac_Toe_Final_
             this.lblTurnDisplay = new System.Windows.Forms.Label();
             this.btnNewGame = new System.Windows.Forms.Button();
             this.btnQuit = new System.Windows.Forms.Button();
+            this.btnNextGame = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblScore_x = new System.Windows.Forms.Label();
+            this.lblScore_o = new System.Windows.Forms.Label();
             this.grpboxTurns.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn1
@@ -210,7 +217,7 @@ namespace Tic_Tac_Toe_Final_
             this.grpboxTurns.Controls.Add(this.btnX);
             this.grpboxTurns.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.grpboxTurns.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(218)))), ((int)(((byte)(0)))));
-            this.grpboxTurns.Location = new System.Drawing.Point(521, 177);
+            this.grpboxTurns.Location = new System.Drawing.Point(522, 216);
             this.grpboxTurns.Name = "grpboxTurns";
             this.grpboxTurns.Size = new System.Drawing.Size(292, 133);
             this.grpboxTurns.TabIndex = 9;
@@ -219,13 +226,13 @@ namespace Tic_Tac_Toe_Final_
             // 
             // lblTurnDisplay
             // 
-            this.lblTurnDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(41)))), ((int)(((byte)(33)))));
+            this.lblTurnDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lblTurnDisplay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblTurnDisplay.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblTurnDisplay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(218)))), ((int)(((byte)(0)))));
-            this.lblTurnDisplay.Location = new System.Drawing.Point(582, 123);
+            this.lblTurnDisplay.Location = new System.Drawing.Point(583, 55);
             this.lblTurnDisplay.Name = "lblTurnDisplay";
-            this.lblTurnDisplay.Size = new System.Drawing.Size(172, 39);
+            this.lblTurnDisplay.Size = new System.Drawing.Size(188, 39);
             this.lblTurnDisplay.TabIndex = 10;
             this.lblTurnDisplay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -235,7 +242,7 @@ namespace Tic_Tac_Toe_Final_
             this.btnNewGame.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNewGame.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnNewGame.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(218)))), ((int)(((byte)(0)))));
-            this.btnNewGame.Location = new System.Drawing.Point(612, 328);
+            this.btnNewGame.Location = new System.Drawing.Point(614, 401);
             this.btnNewGame.Name = "btnNewGame";
             this.btnNewGame.Size = new System.Drawing.Size(115, 34);
             this.btnNewGame.TabIndex = 11;
@@ -249,7 +256,7 @@ namespace Tic_Tac_Toe_Final_
             this.btnQuit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnQuit.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnQuit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(218)))), ((int)(((byte)(0)))));
-            this.btnQuit.Location = new System.Drawing.Point(612, 368);
+            this.btnQuit.Location = new System.Drawing.Point(614, 441);
             this.btnQuit.Name = "btnQuit";
             this.btnQuit.Size = new System.Drawing.Size(115, 34);
             this.btnQuit.TabIndex = 12;
@@ -257,12 +264,93 @@ namespace Tic_Tac_Toe_Final_
             this.btnQuit.UseVisualStyleBackColor = true;
             this.btnQuit.Click += new System.EventHandler(this.btnQuit_Click);
             // 
+            // btnNextGame
+            // 
+            this.btnNextGame.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(218)))), ((int)(((byte)(0)))));
+            this.btnNextGame.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNextGame.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnNextGame.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(218)))), ((int)(((byte)(0)))));
+            this.btnNextGame.Location = new System.Drawing.Point(614, 361);
+            this.btnNextGame.Name = "btnNextGame";
+            this.btnNextGame.Size = new System.Drawing.Size(115, 34);
+            this.btnNextGame.TabIndex = 13;
+            this.btnNextGame.Text = "Next Game";
+            this.btnNextGame.UseVisualStyleBackColor = true;
+            this.btnNextGame.Click += new System.EventHandler(this.btnNextGame_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.lblScore_o);
+            this.groupBox1.Controls.Add(this.lblScore_x);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(218)))), ((int)(((byte)(0)))));
+            this.groupBox1.Location = new System.Drawing.Point(583, 109);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(188, 101);
+            this.groupBox1.TabIndex = 10;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Scoreboard";
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(218)))), ((int)(((byte)(0)))));
+            this.label1.Location = new System.Drawing.Point(25, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(31, 31);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "X";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(218)))), ((int)(((byte)(0)))));
+            this.label2.Location = new System.Drawing.Point(25, 60);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(31, 31);
+            this.label2.TabIndex = 15;
+            this.label2.Text = "O";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblScore_x
+            // 
+            this.lblScore_x.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblScore_x.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblScore_x.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblScore_x.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(218)))), ((int)(((byte)(0)))));
+            this.lblScore_x.Location = new System.Drawing.Point(73, 23);
+            this.lblScore_x.Name = "lblScore_x";
+            this.lblScore_x.Size = new System.Drawing.Size(84, 31);
+            this.lblScore_x.TabIndex = 16;
+            this.lblScore_x.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblScore_o
+            // 
+            this.lblScore_o.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblScore_o.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblScore_o.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblScore_o.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(218)))), ((int)(((byte)(0)))));
+            this.lblScore_o.Location = new System.Drawing.Point(73, 60);
+            this.lblScore_o.Name = "lblScore_o";
+            this.lblScore_o.Size = new System.Drawing.Size(84, 31);
+            this.lblScore_o.TabIndex = 17;
+            this.lblScore_o.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // frmGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(41)))), ((int)(((byte)(33)))));
             this.ClientSize = new System.Drawing.Size(818, 491);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.btnNextGame);
             this.Controls.Add(this.btnQuit);
             this.Controls.Add(this.btnNewGame);
             this.Controls.Add(this.lblTurnDisplay);
@@ -281,6 +369,7 @@ namespace Tic_Tac_Toe_Final_
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tic-Tac-Toe";
             this.grpboxTurns.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -302,6 +391,13 @@ namespace Tic_Tac_Toe_Final_
         private System.Windows.Forms.Label lblTurnDisplay;
         private System.Windows.Forms.Button btnNewGame;
         private System.Windows.Forms.Button btnQuit;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnNextGame;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label lblScore_o;
+        private System.Windows.Forms.Label lblScore_x;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }
 

@@ -13,7 +13,9 @@ namespace Tic_Tac_Toe_Final_
     public partial class frmGame : Form
     {
         bool player_turn = true;
-        int turn_count = 0; 
+        int turn_count = 0;
+        int score_x = 0;
+        int score_o = 0; 
 
         public frmGame()
         {
@@ -28,6 +30,8 @@ namespace Tic_Tac_Toe_Final_
             btn7.Enabled = false;
             btn8.Enabled = false;
             btn9.Enabled = false;
+
+            btnNextGame.Enabled = false;
         }
 
         private void btnX_Click(object sender, EventArgs e)
@@ -72,7 +76,10 @@ namespace Tic_Tac_Toe_Final_
         private void btnNewGame_Click(object sender, EventArgs e)
         {
             lblTurnDisplay.Text = "";
-            turn_count = 0;
+            lblScore_o.Text = "";
+            lblScore_x.Text = "";
+
+            btnNextGame.Enabled = false;
 
             btnX.Enabled = true;
             btnO.Enabled = true;
@@ -112,6 +119,57 @@ namespace Tic_Tac_Toe_Final_
             btn9.Text = "";
             btn9.Enabled = false;
             btn9.BackColor = Color.FromArgb(64, 94, 120);
+
+            turn_count = 0;
+            score_x = 0;
+            score_o = 0;
+        }
+
+        private void btnNextGame_Click(object sender, EventArgs e)
+        {
+            lblTurnDisplay.Text = "";
+
+            btnX.Enabled = true;
+            btnO.Enabled = true;
+
+            btn1.Text = "";
+            btn1.Enabled = false;
+            btn1.BackColor = Color.FromArgb(64, 94, 120);
+
+            btn2.Text = "";
+            btn2.Enabled = false;
+            btn2.BackColor = Color.FromArgb(64, 94, 120);
+
+            btn3.Text = "";
+            btn3.Enabled = false;
+            btn3.BackColor = Color.FromArgb(64, 94, 120);
+
+            btn4.Text = "";
+            btn4.Enabled = false;
+            btn4.BackColor = Color.FromArgb(64, 94, 120);
+
+            btn5.Text = "";
+            btn5.Enabled = false;
+            btn5.BackColor = Color.FromArgb(64, 94, 120);
+
+            btn6.Text = "";
+            btn6.Enabled = false;
+            btn6.BackColor = Color.FromArgb(64, 94, 120);
+
+            btn7.Text = "";
+            btn7.Enabled = false;
+            btn7.BackColor = Color.FromArgb(64, 94, 120);
+
+            btn8.Text = "";
+            btn8.Enabled = false;
+            btn8.BackColor = Color.FromArgb(64, 94, 120);
+
+            btn9.Text = "";
+            btn9.Enabled = false;
+            btn9.BackColor = Color.FromArgb(64, 94, 120);
+
+            turn_count = 0;
+            btnNextGame.Enabled = false;
         }
 
         private void btnQuit_Click(object sender, EventArgs e)
@@ -223,11 +281,17 @@ namespace Tic_Tac_Toe_Final_
             if (player_winner == true)
             {
                 string player = "";
-                if (player_turn)
+                if (player_turn == true)
+                {
                     player = "O";
-                else
-                    player = "X";
+                    score_o++;
+                }
 
+                else
+                {
+                    player = "X";
+                    score_x++;
+                }
                 MessageBox.Show("Player " + player + " wins!");
 
                 btn1.Enabled = false;
@@ -239,15 +303,27 @@ namespace Tic_Tac_Toe_Final_
                 btn7.Enabled = false;
                 btn8.Enabled = false;
                 btn9.Enabled = false;
-
                 turn_count = 0;
             }
             else if (turn_count == 9)
             {
+                btn1.BackColor = Color.FromArgb(235, 235, 235);
+                btn2.BackColor = Color.FromArgb(235, 235, 235);
+                btn3.BackColor = Color.FromArgb(235, 235, 235);
+                btn4.BackColor = Color.FromArgb(235, 235, 235);
+                btn5.BackColor = Color.FromArgb(235, 235, 235);
+                btn6.BackColor = Color.FromArgb(235, 235, 235);
+                btn7.BackColor = Color.FromArgb(235, 235, 235);
+                btn8.BackColor = Color.FromArgb(235, 235, 235);
+                btn9.BackColor = Color.FromArgb(235, 235, 235);
+
                 MessageBox.Show("It's a Draw!");
                 turn_count = 0;
             }
-        }
 
+            lblScore_x.Text = score_x.ToString();
+            lblScore_o.Text = score_o.ToString();
+            btnNextGame.Enabled = true;
+        }
     }
 }
