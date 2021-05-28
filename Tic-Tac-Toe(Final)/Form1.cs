@@ -303,7 +303,9 @@ namespace Tic_Tac_Toe_Final_
                 btn7.Enabled = false;
                 btn8.Enabled = false;
                 btn9.Enabled = false;
+                btnNextGame.Enabled = true;
                 turn_count = 0;
+
             }
             else if (turn_count == 9)
             {
@@ -319,11 +321,11 @@ namespace Tic_Tac_Toe_Final_
 
                 MessageBox.Show("It's a Draw!");
                 turn_count = 0;
+                btnNextGame.Enabled = true;
             }
 
             lblScore_x.Text = score_x.ToString();
             lblScore_o.Text = score_o.ToString();
-            btnNextGame.Enabled = true;
         }
     }
 }
