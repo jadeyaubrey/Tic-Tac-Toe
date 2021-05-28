@@ -210,7 +210,7 @@ namespace Tic_Tac_Toe_Final_
             this.grpboxTurns.Controls.Add(this.btnX);
             this.grpboxTurns.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.grpboxTurns.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(218)))), ((int)(((byte)(0)))));
-            this.grpboxTurns.Location = new System.Drawing.Point(521, 189);
+            this.grpboxTurns.Location = new System.Drawing.Point(521, 177);
             this.grpboxTurns.Name = "grpboxTurns";
             this.grpboxTurns.Size = new System.Drawing.Size(292, 133);
             this.grpboxTurns.TabIndex = 9;
@@ -220,21 +220,24 @@ namespace Tic_Tac_Toe_Final_
             // lblTurnDisplay
             // 
             this.lblTurnDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(41)))), ((int)(((byte)(33)))));
-            this.lblTurnDisplay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblTurnDisplay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblTurnDisplay.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblTurnDisplay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(218)))), ((int)(((byte)(0)))));
-            this.lblTurnDisplay.Location = new System.Drawing.Point(582, 119);
+            this.lblTurnDisplay.Location = new System.Drawing.Point(582, 123);
             this.lblTurnDisplay.Name = "lblTurnDisplay";
-            this.lblTurnDisplay.Size = new System.Drawing.Size(172, 55);
+            this.lblTurnDisplay.Size = new System.Drawing.Size(172, 39);
             this.lblTurnDisplay.TabIndex = 10;
             this.lblTurnDisplay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnNewGame
             // 
-            this.btnNewGame.Location = new System.Drawing.Point(611, 340);
+            this.btnNewGame.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(218)))), ((int)(((byte)(0)))));
+            this.btnNewGame.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNewGame.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnNewGame.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(218)))), ((int)(((byte)(0)))));
+            this.btnNewGame.Location = new System.Drawing.Point(612, 328);
             this.btnNewGame.Name = "btnNewGame";
-            this.btnNewGame.Size = new System.Drawing.Size(115, 28);
+            this.btnNewGame.Size = new System.Drawing.Size(115, 34);
             this.btnNewGame.TabIndex = 11;
             this.btnNewGame.Text = "New Game";
             this.btnNewGame.UseVisualStyleBackColor = true;
@@ -242,9 +245,13 @@ namespace Tic_Tac_Toe_Final_
             // 
             // btnQuit
             // 
-            this.btnQuit.Location = new System.Drawing.Point(611, 374);
+            this.btnQuit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(218)))), ((int)(((byte)(0)))));
+            this.btnQuit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnQuit.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnQuit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(218)))), ((int)(((byte)(0)))));
+            this.btnQuit.Location = new System.Drawing.Point(612, 368);
             this.btnQuit.Name = "btnQuit";
-            this.btnQuit.Size = new System.Drawing.Size(115, 28);
+            this.btnQuit.Size = new System.Drawing.Size(115, 34);
             this.btnQuit.TabIndex = 12;
             this.btnQuit.Text = "Quit Game";
             this.btnQuit.UseVisualStyleBackColor = true;
