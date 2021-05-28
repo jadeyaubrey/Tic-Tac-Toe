@@ -29,6 +29,7 @@ namespace Tic_Tac_Toe_Final_
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGame));
             this.btn1 = new System.Windows.Forms.Button();
             this.btn2 = new System.Windows.Forms.Button();
             this.btn3 = new System.Windows.Forms.Button();
@@ -40,131 +41,188 @@ namespace Tic_Tac_Toe_Final_
             this.btn7 = new System.Windows.Forms.Button();
             this.btnX = new System.Windows.Forms.Button();
             this.btnO = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.grpboxTurns = new System.Windows.Forms.GroupBox();
             this.lblTurnDisplay = new System.Windows.Forms.Label();
             this.btnNewGame = new System.Windows.Forms.Button();
             this.btnQuit = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
+            this.grpboxTurns.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn1
             // 
+            this.btn1.BackColor = System.Drawing.Color.CadetBlue;
+            this.btn1.FlatAppearance.BorderColor = System.Drawing.Color.CadetBlue;
+            this.btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn1.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn1.ForeColor = System.Drawing.Color.White;
             this.btn1.Location = new System.Drawing.Point(10, 12);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(165, 152);
             this.btn1.TabIndex = 0;
-            this.btn1.UseVisualStyleBackColor = true;
+            this.btn1.UseVisualStyleBackColor = false;
             this.btn1.Click += new System.EventHandler(this.btnGrid_click);
             // 
             // btn2
             // 
+            this.btn2.BackColor = System.Drawing.Color.CadetBlue;
+            this.btn2.FlatAppearance.BorderColor = System.Drawing.Color.CadetBlue;
+            this.btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn2.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn2.ForeColor = System.Drawing.Color.White;
             this.btn2.Location = new System.Drawing.Point(181, 12);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(165, 152);
             this.btn2.TabIndex = 1;
-            this.btn2.UseVisualStyleBackColor = true;
+            this.btn2.UseVisualStyleBackColor = false;
             this.btn2.Click += new System.EventHandler(this.btnGrid_click);
             // 
             // btn3
             // 
+            this.btn3.BackColor = System.Drawing.Color.CadetBlue;
+            this.btn3.FlatAppearance.BorderColor = System.Drawing.Color.CadetBlue;
+            this.btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn3.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn3.ForeColor = System.Drawing.Color.White;
             this.btn3.Location = new System.Drawing.Point(352, 12);
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(165, 152);
             this.btn3.TabIndex = 2;
-            this.btn3.UseVisualStyleBackColor = true;
+            this.btn3.UseVisualStyleBackColor = false;
             this.btn3.Click += new System.EventHandler(this.btnGrid_click);
             // 
             // btn6
             // 
+            this.btn6.BackColor = System.Drawing.Color.CadetBlue;
+            this.btn6.FlatAppearance.BorderColor = System.Drawing.Color.CadetBlue;
+            this.btn6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn6.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn6.ForeColor = System.Drawing.Color.White;
             this.btn6.Location = new System.Drawing.Point(352, 170);
             this.btn6.Name = "btn6";
             this.btn6.Size = new System.Drawing.Size(165, 152);
             this.btn6.TabIndex = 5;
-            this.btn6.UseVisualStyleBackColor = true;
+            this.btn6.UseVisualStyleBackColor = false;
             this.btn6.Click += new System.EventHandler(this.btnGrid_click);
             // 
             // btn5
             // 
+            this.btn5.BackColor = System.Drawing.Color.CadetBlue;
+            this.btn5.FlatAppearance.BorderColor = System.Drawing.Color.CadetBlue;
+            this.btn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn5.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn5.ForeColor = System.Drawing.Color.White;
             this.btn5.Location = new System.Drawing.Point(181, 170);
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(165, 152);
             this.btn5.TabIndex = 4;
-            this.btn5.UseVisualStyleBackColor = true;
+            this.btn5.UseVisualStyleBackColor = false;
             this.btn5.Click += new System.EventHandler(this.btnGrid_click);
             // 
             // btn4
             // 
+            this.btn4.BackColor = System.Drawing.Color.CadetBlue;
+            this.btn4.FlatAppearance.BorderColor = System.Drawing.Color.CadetBlue;
+            this.btn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn4.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn4.ForeColor = System.Drawing.Color.White;
             this.btn4.Location = new System.Drawing.Point(10, 170);
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(165, 152);
             this.btn4.TabIndex = 3;
-            this.btn4.UseVisualStyleBackColor = true;
+            this.btn4.UseVisualStyleBackColor = false;
             this.btn4.Click += new System.EventHandler(this.btnGrid_click);
             // 
             // btn9
             // 
+            this.btn9.BackColor = System.Drawing.Color.CadetBlue;
+            this.btn9.FlatAppearance.BorderColor = System.Drawing.Color.CadetBlue;
+            this.btn9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn9.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn9.ForeColor = System.Drawing.Color.White;
             this.btn9.Location = new System.Drawing.Point(352, 328);
             this.btn9.Name = "btn9";
             this.btn9.Size = new System.Drawing.Size(165, 152);
             this.btn9.TabIndex = 8;
-            this.btn9.UseVisualStyleBackColor = true;
+            this.btn9.UseVisualStyleBackColor = false;
             this.btn9.Click += new System.EventHandler(this.btnGrid_click);
             // 
             // btn8
             // 
+            this.btn8.BackColor = System.Drawing.Color.CadetBlue;
+            this.btn8.FlatAppearance.BorderColor = System.Drawing.Color.CadetBlue;
+            this.btn8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn8.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn8.ForeColor = System.Drawing.Color.White;
             this.btn8.Location = new System.Drawing.Point(181, 328);
             this.btn8.Name = "btn8";
             this.btn8.Size = new System.Drawing.Size(165, 152);
             this.btn8.TabIndex = 7;
-            this.btn8.UseVisualStyleBackColor = true;
+            this.btn8.UseVisualStyleBackColor = false;
             this.btn8.Click += new System.EventHandler(this.btnGrid_click);
             // 
             // btn7
             // 
+            this.btn7.BackColor = System.Drawing.Color.CadetBlue;
+            this.btn7.FlatAppearance.BorderColor = System.Drawing.Color.CadetBlue;
+            this.btn7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn7.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn7.ForeColor = System.Drawing.Color.White;
             this.btn7.Location = new System.Drawing.Point(10, 328);
             this.btn7.Name = "btn7";
             this.btn7.Size = new System.Drawing.Size(165, 152);
             this.btn7.TabIndex = 6;
-            this.btn7.UseVisualStyleBackColor = true;
+            this.btn7.UseVisualStyleBackColor = false;
             this.btn7.Click += new System.EventHandler(this.btnGrid_click);
             // 
             // btnX
             // 
+            this.btnX.BackColor = System.Drawing.Color.CadetBlue;
+            this.btnX.FlatAppearance.BorderColor = System.Drawing.Color.CadetBlue;
+            this.btnX.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnX.Font = new System.Drawing.Font("Comic Sans MS", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnX.ForeColor = System.Drawing.Color.White;
             this.btnX.Location = new System.Drawing.Point(13, 26);
             this.btnX.Name = "btnX";
             this.btnX.Size = new System.Drawing.Size(132, 95);
             this.btnX.TabIndex = 0;
             this.btnX.Text = "X";
-            this.btnX.UseVisualStyleBackColor = true;
+            this.btnX.UseVisualStyleBackColor = false;
             this.btnX.Click += new System.EventHandler(this.btnX_Click);
             // 
             // btnO
             // 
+            this.btnO.BackColor = System.Drawing.Color.CadetBlue;
+            this.btnO.FlatAppearance.BorderColor = System.Drawing.Color.CadetBlue;
+            this.btnO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnO.Font = new System.Drawing.Font("Comic Sans MS", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnO.ForeColor = System.Drawing.Color.White;
             this.btnO.Location = new System.Drawing.Point(151, 26);
             this.btnO.Name = "btnO";
             this.btnO.Size = new System.Drawing.Size(132, 95);
             this.btnO.TabIndex = 1;
             this.btnO.Text = "O";
-            this.btnO.UseVisualStyleBackColor = true;
+            this.btnO.UseVisualStyleBackColor = false;
             this.btnO.Click += new System.EventHandler(this.btnO_Click);
             // 
-            // groupBox1
+            // grpboxTurns
             // 
-            this.groupBox1.Controls.Add(this.btnO);
-            this.groupBox1.Controls.Add(this.btnX);
-            this.groupBox1.Location = new System.Drawing.Point(521, 189);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(292, 133);
-            this.groupBox1.TabIndex = 9;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Select first turn";
+            this.grpboxTurns.Controls.Add(this.btnO);
+            this.grpboxTurns.Controls.Add(this.btnX);
+            this.grpboxTurns.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.grpboxTurns.Location = new System.Drawing.Point(521, 189);
+            this.grpboxTurns.Name = "grpboxTurns";
+            this.grpboxTurns.Size = new System.Drawing.Size(292, 133);
+            this.grpboxTurns.TabIndex = 9;
+            this.grpboxTurns.TabStop = false;
+            this.grpboxTurns.Text = "Select first turn";
             // 
             // lblTurnDisplay
             // 
-            this.lblTurnDisplay.BackColor = System.Drawing.Color.LightGray;
-            this.lblTurnDisplay.Location = new System.Drawing.Point(606, 120);
+            this.lblTurnDisplay.BackColor = System.Drawing.Color.Silver;
+            this.lblTurnDisplay.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTurnDisplay.Location = new System.Drawing.Point(582, 119);
             this.lblTurnDisplay.Name = "lblTurnDisplay";
-            this.lblTurnDisplay.Size = new System.Drawing.Size(120, 55);
+            this.lblTurnDisplay.Size = new System.Drawing.Size(172, 55);
             this.lblTurnDisplay.TabIndex = 10;
             this.lblTurnDisplay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -192,11 +250,12 @@ namespace Tic_Tac_Toe_Final_
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(818, 491);
             this.Controls.Add(this.btnQuit);
             this.Controls.Add(this.btnNewGame);
             this.Controls.Add(this.lblTurnDisplay);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.grpboxTurns);
             this.Controls.Add(this.btn9);
             this.Controls.Add(this.btn8);
             this.Controls.Add(this.btn7);
@@ -206,10 +265,11 @@ namespace Tic_Tac_Toe_Final_
             this.Controls.Add(this.btn3);
             this.Controls.Add(this.btn2);
             this.Controls.Add(this.btn1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmGame";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tic-Tac-Toe";
-            this.groupBox1.ResumeLayout(false);
+            this.grpboxTurns.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -227,7 +287,7 @@ namespace Tic_Tac_Toe_Final_
         private System.Windows.Forms.Button btn7;
         private System.Windows.Forms.Button btnO;
         private System.Windows.Forms.Button btnX;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox grpboxTurns;
         private System.Windows.Forms.Label lblTurnDisplay;
         private System.Windows.Forms.Button btnNewGame;
         private System.Windows.Forms.Button btnQuit;

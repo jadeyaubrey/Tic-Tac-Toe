@@ -33,7 +33,7 @@ namespace Tic_Tac_Toe_Final_
         private void btnX_Click(object sender, EventArgs e)
         {
             player_turn = true;
-            lblTurnDisplay.Text = "X";
+            lblTurnDisplay.Text = "Player X's Turn";
 
             btnX.Enabled = false;
             btnO.Enabled = false;
@@ -53,7 +53,7 @@ namespace Tic_Tac_Toe_Final_
         private void btnO_Click(object sender, EventArgs e)
         {
             player_turn = false;
-            lblTurnDisplay.Text = "O";
+            lblTurnDisplay.Text = "Player O's Turn";
 
             btnX.Enabled = false;
             btnO.Enabled = false;
@@ -117,13 +117,13 @@ namespace Tic_Tac_Toe_Final_
             if (player_turn == true)
             {
                 btnGrid.Text = "X";
-                lblTurnDisplay.Text = "O";
+                lblTurnDisplay.Text = "Player O's Turn";
             }
 
             else
             {
                 btnGrid.Text = "O";
-                lblTurnDisplay.Text = "X";
+                lblTurnDisplay.Text = "Player X's Turn";
             }
 
             player_turn = !player_turn;
