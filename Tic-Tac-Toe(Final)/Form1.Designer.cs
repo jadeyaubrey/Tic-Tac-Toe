@@ -50,8 +50,8 @@ namespace Tic_Tac_Toe_Final_
             // 
             // btn1
             // 
-            this.btn1.BackColor = System.Drawing.Color.CadetBlue;
-            this.btn1.FlatAppearance.BorderColor = System.Drawing.Color.CadetBlue;
+            this.btn1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(94)))), ((int)(((byte)(120)))));
+            this.btn1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(94)))), ((int)(((byte)(120)))));
             this.btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn1.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn1.ForeColor = System.Drawing.Color.White;
@@ -64,8 +64,8 @@ namespace Tic_Tac_Toe_Final_
             // 
             // btn2
             // 
-            this.btn2.BackColor = System.Drawing.Color.CadetBlue;
-            this.btn2.FlatAppearance.BorderColor = System.Drawing.Color.CadetBlue;
+            this.btn2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(94)))), ((int)(((byte)(120)))));
+            this.btn2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(94)))), ((int)(((byte)(120)))));
             this.btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn2.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn2.ForeColor = System.Drawing.Color.White;
@@ -78,8 +78,8 @@ namespace Tic_Tac_Toe_Final_
             // 
             // btn3
             // 
-            this.btn3.BackColor = System.Drawing.Color.CadetBlue;
-            this.btn3.FlatAppearance.BorderColor = System.Drawing.Color.CadetBlue;
+            this.btn3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(94)))), ((int)(((byte)(120)))));
+            this.btn3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(94)))), ((int)(((byte)(120)))));
             this.btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn3.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn3.ForeColor = System.Drawing.Color.White;
@@ -92,8 +92,8 @@ namespace Tic_Tac_Toe_Final_
             // 
             // btn6
             // 
-            this.btn6.BackColor = System.Drawing.Color.CadetBlue;
-            this.btn6.FlatAppearance.BorderColor = System.Drawing.Color.CadetBlue;
+            this.btn6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(94)))), ((int)(((byte)(120)))));
+            this.btn6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(94)))), ((int)(((byte)(120)))));
             this.btn6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn6.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn6.ForeColor = System.Drawing.Color.White;
@@ -106,8 +106,8 @@ namespace Tic_Tac_Toe_Final_
             // 
             // btn5
             // 
-            this.btn5.BackColor = System.Drawing.Color.CadetBlue;
-            this.btn5.FlatAppearance.BorderColor = System.Drawing.Color.CadetBlue;
+            this.btn5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(94)))), ((int)(((byte)(120)))));
+            this.btn5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(94)))), ((int)(((byte)(120)))));
             this.btn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn5.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn5.ForeColor = System.Drawing.Color.White;
@@ -120,8 +120,8 @@ namespace Tic_Tac_Toe_Final_
             // 
             // btn4
             // 
-            this.btn4.BackColor = System.Drawing.Color.CadetBlue;
-            this.btn4.FlatAppearance.BorderColor = System.Drawing.Color.CadetBlue;
+            this.btn4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(94)))), ((int)(((byte)(120)))));
+            this.btn4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(94)))), ((int)(((byte)(120)))));
             this.btn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn4.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn4.ForeColor = System.Drawing.Color.White;
@@ -134,8 +134,8 @@ namespace Tic_Tac_Toe_Final_
             // 
             // btn9
             // 
-            this.btn9.BackColor = System.Drawing.Color.CadetBlue;
-            this.btn9.FlatAppearance.BorderColor = System.Drawing.Color.CadetBlue;
+            this.btn9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(94)))), ((int)(((byte)(120)))));
+            this.btn9.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(94)))), ((int)(((byte)(120)))));
             this.btn9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn9.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn9.ForeColor = System.Drawing.Color.White;
@@ -148,8 +148,8 @@ namespace Tic_Tac_Toe_Final_
             // 
             // btn8
             // 
-            this.btn8.BackColor = System.Drawing.Color.CadetBlue;
-            this.btn8.FlatAppearance.BorderColor = System.Drawing.Color.CadetBlue;
+            this.btn8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(94)))), ((int)(((byte)(120)))));
+            this.btn8.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(94)))), ((int)(((byte)(120)))));
             this.btn8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn8.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn8.ForeColor = System.Drawing.Color.White;
@@ -162,8 +162,8 @@ namespace Tic_Tac_Toe_Final_
             // 
             // btn7
             // 
-            this.btn7.BackColor = System.Drawing.Color.CadetBlue;
-            this.btn7.FlatAppearance.BorderColor = System.Drawing.Color.CadetBlue;
+            this.btn7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(94)))), ((int)(((byte)(120)))));
+            this.btn7.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(94)))), ((int)(((byte)(120)))));
             this.btn7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn7.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn7.ForeColor = System.Drawing.Color.White;
@@ -176,8 +176,8 @@ namespace Tic_Tac_Toe_Final_
             // 
             // btnX
             // 
-            this.btnX.BackColor = System.Drawing.Color.CadetBlue;
-            this.btnX.FlatAppearance.BorderColor = System.Drawing.Color.CadetBlue;
+            this.btnX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(94)))), ((int)(((byte)(120)))));
+            this.btnX.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(94)))), ((int)(((byte)(120)))));
             this.btnX.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnX.Font = new System.Drawing.Font("Comic Sans MS", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnX.ForeColor = System.Drawing.Color.White;
@@ -191,8 +191,8 @@ namespace Tic_Tac_Toe_Final_
             // 
             // btnO
             // 
-            this.btnO.BackColor = System.Drawing.Color.CadetBlue;
-            this.btnO.FlatAppearance.BorderColor = System.Drawing.Color.CadetBlue;
+            this.btnO.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(94)))), ((int)(((byte)(120)))));
+            this.btnO.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(94)))), ((int)(((byte)(120)))));
             this.btnO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnO.Font = new System.Drawing.Font("Comic Sans MS", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnO.ForeColor = System.Drawing.Color.White;
@@ -209,6 +209,7 @@ namespace Tic_Tac_Toe_Final_
             this.grpboxTurns.Controls.Add(this.btnO);
             this.grpboxTurns.Controls.Add(this.btnX);
             this.grpboxTurns.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.grpboxTurns.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(218)))), ((int)(((byte)(0)))));
             this.grpboxTurns.Location = new System.Drawing.Point(521, 189);
             this.grpboxTurns.Name = "grpboxTurns";
             this.grpboxTurns.Size = new System.Drawing.Size(292, 133);
@@ -218,8 +219,11 @@ namespace Tic_Tac_Toe_Final_
             // 
             // lblTurnDisplay
             // 
-            this.lblTurnDisplay.BackColor = System.Drawing.Color.Silver;
+            this.lblTurnDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(41)))), ((int)(((byte)(33)))));
+            this.lblTurnDisplay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblTurnDisplay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblTurnDisplay.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTurnDisplay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(218)))), ((int)(((byte)(0)))));
             this.lblTurnDisplay.Location = new System.Drawing.Point(582, 119);
             this.lblTurnDisplay.Name = "lblTurnDisplay";
             this.lblTurnDisplay.Size = new System.Drawing.Size(172, 55);
@@ -250,7 +254,7 @@ namespace Tic_Tac_Toe_Final_
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Gainsboro;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(41)))), ((int)(((byte)(33)))));
             this.ClientSize = new System.Drawing.Size(818, 491);
             this.Controls.Add(this.btnQuit);
             this.Controls.Add(this.btnNewGame);

@@ -79,30 +79,39 @@ namespace Tic_Tac_Toe_Final_
 
             btn1.Text = "";
             btn1.Enabled = false;
+            btn1.BackColor = Color.FromArgb(64, 94, 120);
 
             btn2.Text = "";
             btn2.Enabled = false;
+            btn2.BackColor = Color.FromArgb(64, 94, 120);
 
             btn3.Text = "";
             btn3.Enabled = false;
+            btn3.BackColor = Color.FromArgb(64, 94, 120);
 
             btn4.Text = "";
             btn4.Enabled = false;
+            btn4.BackColor = Color.FromArgb(64, 94, 120);
 
             btn5.Text = "";
             btn5.Enabled = false;
+            btn5.BackColor = Color.FromArgb(64, 94, 120);
 
             btn6.Text = "";
             btn6.Enabled = false;
+            btn6.BackColor = Color.FromArgb(64, 94, 120);
 
             btn7.Text = "";
             btn7.Enabled = false;
+            btn7.BackColor = Color.FromArgb(64, 94, 120);
 
             btn8.Text = "";
             btn8.Enabled = false;
+            btn8.BackColor = Color.FromArgb(64, 94, 120);
 
             btn9.Text = "";
             btn9.Enabled = false;
+            btn9.BackColor = Color.FromArgb(64, 94, 120);
         }
 
         private void btnQuit_Click(object sender, EventArgs e)
@@ -139,25 +148,77 @@ namespace Tic_Tac_Toe_Final_
 
             //vertical patterns 
             if ((btn1.Text == btn4.Text) && (btn4.Text == btn7.Text) && (!btn1.Enabled))
+            {
                 player_winner = true;
+
+                btn1.BackColor = Color.FromArgb(250, 218, 0);
+                btn4.BackColor = Color.FromArgb(250, 218, 0);
+                btn7.BackColor = Color.FromArgb(250, 218, 0);
+            }
+
             else if ((btn2.Text == btn5.Text) && (btn5.Text == btn8.Text) && (!btn2.Enabled))
+            {
                 player_winner = true;
+
+                btn2.BackColor = Color.FromArgb(250, 218, 0);
+                btn5.BackColor = Color.FromArgb(250, 218, 0);
+                btn8.BackColor = Color.FromArgb(250, 218, 0);
+            }
             else if ((btn3.Text == btn6.Text) && (btn3.Text == btn9.Text) && (!btn3.Enabled))
+            {
                 player_winner = true;
+
+                btn3.BackColor = Color.FromArgb(250, 218, 0);
+                btn6.BackColor = Color.FromArgb(250, 218, 0);
+                btn9.BackColor = Color.FromArgb(250, 218, 0);
+            }
 
             //horizontal patterns 
             else if ((btn1.Text == btn2.Text) && (btn1.Text == btn3.Text) && (!btn1.Enabled))
-                player_winner = true;
-            else if ((btn4.Text == btn5.Text) && (btn4.Text == btn6.Text) && (!btn4.Enabled))
-                player_winner = true;
-            else if ((btn7.Text == btn8.Text) && (btn7.Text == btn9.Text) && (!btn7.Enabled))
+            {
                 player_winner = true;
 
+                btn1.BackColor = Color.FromArgb(250, 218, 0);
+                btn2.BackColor = Color.FromArgb(250, 218, 0);
+                btn3.BackColor = Color.FromArgb(250, 218, 0);
+            }
+
+            else if ((btn4.Text == btn5.Text) && (btn4.Text == btn6.Text) && (!btn4.Enabled))
+            {
+                player_winner = true;
+
+                btn4.BackColor = Color.FromArgb(250, 218, 0);
+                btn5.BackColor = Color.FromArgb(250, 218, 0);
+                btn6.BackColor = Color.FromArgb(250, 218, 0);
+            }
+
+            else if ((btn7.Text == btn8.Text) && (btn7.Text == btn9.Text) && (!btn7.Enabled))
+            {
+                player_winner = true;
+
+                btn7.BackColor = Color.FromArgb(250, 218, 0);
+                btn8.BackColor = Color.FromArgb(250, 218, 0);
+                btn9.BackColor = Color.FromArgb(250, 218, 0);
+            }
+
             //diagonal patterns
-           else if ((btn1.Text == btn5.Text) && (btn1.Text == btn9.Text) && (!btn1.Enabled))
+            else if ((btn1.Text == btn5.Text) && (btn1.Text == btn9.Text) && (!btn1.Enabled))
+            {
                 player_winner = true;
-           else if ((btn3.Text == btn5.Text) && (btn3.Text == btn7.Text) && (!btn3.Enabled))
+
+                btn1.BackColor = Color.FromArgb(250, 218, 0);
+                btn5.BackColor = Color.FromArgb(250, 218, 0);
+                btn9.BackColor = Color.FromArgb(250, 218, 0);
+            }
+
+            else if ((btn3.Text == btn5.Text) && (btn3.Text == btn7.Text) && (!btn3.Enabled))
+            {
                 player_winner = true;
+
+                btn3.BackColor = Color.FromArgb(250, 218, 0);
+                btn5.BackColor = Color.FromArgb(250, 218, 0);
+                btn7.BackColor = Color.FromArgb(250, 218, 0);
+            }
 
             if (player_winner == true)
             {
